@@ -33,7 +33,6 @@ public class User {
         List<User> users = new ArrayList<>();
         User newUser = new User(login, password, userId, name, age, heigth, weigth, fatPercentage);
         users.add(newUser);
-        System.out.printf(users.toString());
         return true;
     }
 

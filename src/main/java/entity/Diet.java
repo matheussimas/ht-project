@@ -26,8 +26,6 @@ public class Diet extends Routine {
         dietToBeIncluded.setIntensity(this.intensity);
         dietToBeIncluded.setDaysOfWeek(this.daysOfWeek);
 
-        System.out.printf(dietToBeIncluded.toString());
-
         return true;
     }
 
