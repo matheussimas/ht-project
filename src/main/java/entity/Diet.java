@@ -5,6 +5,7 @@ import java.util.ArrayList;
 public class Diet extends Routine {
 
     private ArrayList<Food> diets = new ArrayList<>();
+    private int dietId;
 
     public Diet(ArrayList<Food> diets, String name, int intensity, DaysOfWeek daysOfWeek) {
         this.name = name;
@@ -14,19 +15,6 @@ public class Diet extends Routine {
     }
 
     public Diet() {
-    }
-
-    public boolean includeDiet(Food food) {
-
-        ArrayList<Food> foodList = new ArrayList<>();
-        foodList.add(food);
-        Diet dietToBeIncluded = new Diet();
-        dietToBeIncluded.setDiets(foodList);
-        dietToBeIncluded.setName(this.name);
-        dietToBeIncluded.setIntensity(this.intensity);
-        dietToBeIncluded.setDaysOfWeek(this.daysOfWeek);
-
-        return true;
     }
 
     public Diet getDiet(DaysOfWeek daysOfWeek) {
@@ -44,6 +32,13 @@ public class Diet extends Routine {
         this.diets = diets;
     }
 
+    public int getDietId() {
+        return dietId;
+    }
+
+    public void setDietId(int dietId) {
+        this.dietId = dietId;
+    }
 
     @Override
     public String toString() {
