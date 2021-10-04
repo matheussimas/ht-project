@@ -6,6 +6,7 @@ public class Food {
     private String momentOfDay;
     private int caloriesPerGram;
     private DaysOfWeek daysOfWeek;
+    private int foodId;
 
     public Food(String nameOfFood, String momentOfDay, int caloriesPerGram, DaysOfWeek daysOfWeek) {
         this.nameOfFood = nameOfFood;
@@ -47,6 +48,14 @@ public class Food {
 
     public void setDaysOfWeek(DaysOfWeek daysOfWeek) {
         this.daysOfWeek = daysOfWeek;
+    }
+
+    public int getFoodId() {
+        return foodId;
+    }
+
+    public void setFoodId(int foodId) {
+        this.foodId = foodId;
     }
 
     @Override
